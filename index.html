@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spinning Connor</title>
+  <meta property="og:title" content="Spinning Connor">
+  <meta property="og:description" content="They weren't lying, it really is a spinning Connor.">
+  <style>
+    html, body { height: 100%; margin: 0; background: #fff; }
+    body { display: flex; flex-direction: column; font-family: "Times New Roman", Times, serif; }
+    model-viewer { flex: 1; width: 100%; min-height: 0; --poster-color: transparent; }
+    model-viewer::part(default-progress-bar) { display: none; }
+    p { margin: 0; padding: 8px 16px 16px; text-align: center; color: #8a8a8a; font-size: 13px; }
+  </style>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <model-viewer src="connor-head.glb" alt="A 3D scan of Connor's head, spinning"
+    auto-rotate auto-rotate-delay="0" rotation-per-second="180deg"
+    camera-orbit="0deg 85deg auto" disable-zoom disable-pan disable-tap
+    interaction-prompt="none" shadow-intensity="0" exposure="1.05"></model-viewer>
+  <p>They weren't lying, it really is a spinning Connor.</p>
+</body>
+</html>
