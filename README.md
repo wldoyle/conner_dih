@@ -1,1 +1,1 @@
-wldoyle.github.io/connor_dih
+https://wldoyle.github.io/connor_dih/
